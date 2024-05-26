@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles.css">
+  <link rel="stylesheet" href="templates.css">
+  <link rel="stylesheet" href="Rcontent.css">
+  <link rel="stylesheet" href="tempdesign.css">
+  <link rel="stylesheet" href="template2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Resume Builder</title>
+</head>
+<body>
+
+
+  <div class="navbar">
+    <div class="logo-div">
+      <img src="Images/RB Logo.png" class="logo-nav">
+    <h2 class="navh2">Resume Builder</h2>
+    </div>
+    
+   <div class="nav-item">
+       <div><a href="resume-tips.html">Resume Tips</a></div>
+   </div>
+   <div class="download-container">
+    <button id="download-resume" 
+    class="btn-download">Download Resume as PDF</button>
+  </div>
+</div>
+
+
+<!-- templates -->
+<div class="whole-body">
+<div id="particles-js"></div>
+<div class="tempBody">
+   <center>Choose Your Template!</center>
+
+  <div class="templates">
+    <div class="box box1" onclick="scrollToSection('container');showcontainer();generateResume();showSection1()">
+    <img src="Images/temp1.png" alt=""class="tempImg"></div>
+    <div class="box box2" onclick="scrollToSection('container');showcontainer();generateResume2();showSection2()">
+      <img src="Images/Temp2.png" alt=""class="tempImg"></div>
+    <div class="box box3" onclick="scrollToSection('container');showcontainer();generateResume3();showSection3()">
+      <img src="Images/temp3.png" alt=""class="tempImg"></div>
+  </div>
+</div>
+</div>
+
+  <!--First container-->
+
+  <div class="container" id="container" style="visibility: hidden;">
+  
+    <!-- Left Container for Input and Tabs -->
+
+    <div class="left-container">
+  
+      <div class="tabs">
+        <div class="tab" id="personal-tab">
+          <h2 class="tab-title">Personal Information</h2>
+        </div>
+        <div class="tab" id="education-tab">
+          <h2 class="tab-title">Education</h2>
+        </div>
+        <div class="tab" id="experience-tab">
+          <h2 class="tab-title">Work Experience</h2>
+        </div>
+      </div>
+      <div class="input-container">
+        <section class="input-section" id="personal-info">
+          <h2 class="section-title">Personal Information</h2>
+          <form id="personal-info-form">
+
+            <!-- Personal Information form fields -->
+            <div class="form-image">
+              <label for="profile-img" class="pImg">Profile Image:</label>
+              <div class="file-input-container">
+                <input type="file" id="profile-img" accept="image/*">
+                <label for="profile-img" class="upload-button">Select Image</label>
+              </div>
+              <div id="profile-img-preview" class="profile-img-preview">
+              <img id="preview-image" src="#" alt="Preview Image" style="display: none;">
+              </div>
+              </div>
+              <div class="form-group"> 
+                <label for="full-name">Full Name</label>
+                <input type="text" class="form-control" id="full-name" placeholder="Enter your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="date-of-birth">Date of Birth</label>
+                <input type="date" class="form-control" id="date-of-birth">
+              </div>
+              <div class="form-group">
+                <label for="nationality">Nationality</label>
+                <input type="text" class="form-control" id="nationality" placeholder="Enter your nationality">
+              </div>
+              <div class="form-group">
+                <label for="job-title">Job Title</label>
+                <input type="text" class="form-control" id="job-title" placeholder="Enter your job title" required>
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter your address">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                <label for="linkedin">LinkedIn</label>
+                <input type="url" class="form-control" id="linkedin" placeholder="Enter your LinkedIn profile URL">
+              </div>
+              <div class="form-group">
+                <label for="summary">Summary</label>
+                <textarea class="form-control" id="summary" rows="4" placeholder="Write a summary about yourself"></textarea>
+              </div>
+            <!-- ... (your form fields) ... -->
+          </form>
+        </section>
+        <section class="input-section" id="education">
+          <h2 class="section-title">Education</h2>
+          <form id="education-form">
+            <!-- Education form fields -->
+            <div class="form-group">
+                <label for="school">School/University</label>
+                <input type="text" class="form-control" id="school" placeholder="Enter school/university name">
+              </div>
+              <div class ="form-group">
+                <label for="degree">Degree</label>
+                <input type="text" class="form-control" id="degree" placeholder="Enter your degree">
+              </div>
+              <div class="form-group">
+                <label for="graduation-year">Graduation Year</label>
+                <input type="text" class="form-control" id="graduation-year" placeholder="Enter graduation year">
+              </div>
+              <div class="form-group">
+                <label for="gpa">GPA</label>
+                <input type="text" class="form-control" id="gpa" placeholder="Enter your GPA">
+              </div>
+              <div class="form-group">
+                <label for="major">Major</label>
+                <input type="text" class="form-control" id="major" placeholder="Enter your major">
+              </div>
+              <!-- Add more fields as needed -->
+              <div class="form-group">
+                <label for="honors">Honors/Awards</label>
+                <input type="text" class="form-control" id="honors" placeholder="Enter any honors or awards">
+              </div>
+              <div class="form-group">
+                <label for="courses">Relevant Courses</label>
+                <input type="text" class="form-control" id="courses" placeholder="List relevant courses">
+              </div>
+            <!-- ... (your form fields) ... -->
+          </form>
+        </section>
+        <section class="input-section" id="experience">
+          <h2 class="section-title">Work Experience</h2>
+          <form id="experience-form">
+            <!-- Work Experience form fields -->
+            <div class="form-group">
+                <label for="job-title-experience">Job Title</label>
+                <input type="text" class="form-control" id="job-title-experience" placeholder="Enter job title">
+              </div>
+              <div class="form-group">
+                <label for="employer">Employer</label>
+                <input type="text" class="form-control" id="employer" placeholder="Enter employer name">
+              </div>
+              <div class="form-group">
+                <label for="work-period">Work Period</label>
+                <input type="text" class="form-control" id="work-period" placeholder="Enter work period">
+              </div>
+              <div class="form-group">
+                <label for="job-description">Job Description</label>
+                <textarea class="form-control" id="job-description" rows="4" placeholder="Describe your job responsibilities"></textarea>
+              </div>
+              <div class="form-group keywords">
+                <label for="keywords">Keywords (knowledge areas, hobbies, etc.)</label>
+                <input type="text" class="form-control" id="keywords" placeholder="Add keywords, separated by commas">
+            </div>
+              <div class="form-group">
+                <label for="achievements">Achievements</label>
+                <textarea class="form-control" id="achievements" rows="4" placeholder="List your achievements at this job"></textarea>
+              </div>
+              <!-- Add more fields as needed -->
+              <div class="form-group">
+                <label for="references">References</label>
+                <input type="text" class="form-control" id="references" placeholder="Provide references, if applicable">
+              </div>
+              <div class="form-group">
+                <label for="certifications">Certifications</label>
+                <input type="text" class="form-control" id="certifications" placeholder="List any relevant certifications">
+              </div>
+            <!-- ... (your form fields) ... -->
+          </form>
+        </section>
+      </div>
+    </div>
+    
+    <!-- Right Container for Preview -->
+    <div class="right-container">
+      
+      <header class="header">
+        Resume Preview
+      </header>
+      <section class="resume-preview" id="resume-preview">
+        <button id="generate-resume1" class="btn">Generate Resume 1</button>
+        <div id="preview-content1" class="preview-content">
+          <!-- Preview content will be displayed here -->
+        </div>
+      </section>
+      <section class="resume-preview" id="resume-preview2">
+        <button id="generate-resume2" class="btn">Generate Resume 2</button>
+        <div id="preview-content2" class="preview-content">
+          <!-- Preview content will be displayed here -->
+        </div>
+      </section>
+      <section class="resume-preview" id="resume-preview3">
+        <button id="generate-resume3" class="btn">Generate Resume 3</button>
+        <div id="preview-content3" class="preview-content">
+          <!-- Preview content will be displayed here -->
+        </div>
+      </section>
+    </div>
+    
+  </div>
+  
+  <footer class="footer">
+    <p>&copy; 2023 | Developed by Jayesh Kolambkar and Shivam Maurya. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="particles.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  
+  <script>
+     particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#66ccff" // Set a different color for the particles
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      }
+    },
+    "opacity": {
+      "value": 0.8, // Change the opacity of the particles
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0.2,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 5,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 3,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#66ccff", // Set a different color for the lines
+      "opacity": 0.5,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse" // Change the interaction mode on hover
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+  </script>
+  
+</body>
+</html>

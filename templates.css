@@ -1,0 +1,60 @@
+.templates{
+    background: transparent;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    justify-content:space-evenly;
+    padding-top: 1rem ;
+    z-index: -1;
+  
+
+ }
+ 
+ .tempBody{
+    height: 550px;
+    background: transparent;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    
+ }
+
+ .box{
+    height: 380px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2980b9;
+	 border-radius:10px;
+    z-index: 2;
+    
+ }
+ 
+ .tempImg{
+	 border-radius:10px;
+    max-width: 290px;
+
+
+ }
+
+ .tempImg:hover{
+    transform: scale(1.2); 
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 10px #5b47b4, 
+    0 0 20px #3c2fb1, 0 0 30px #1452da; 
+ }
+
+.templates.tempImg:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+

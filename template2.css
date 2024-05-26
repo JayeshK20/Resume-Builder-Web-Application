@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#wrapper{
+ 
+ 
+  margin: 0 auto;
+}
+.resumme{
+    /* height: 100vh; */
+    background-color: rgb(242, 242, 242);
+       display: flex;
+       border-radius: 2%;
+       width: 100%;
+       justify-content: center;
+       padding:0.5% 0 0.5% 0;
+}
+
+
+
+.left-section{
+    
+    position: relative;
+
+}
+
+.right-section{
+    padding-left: 2%;
+   height: 100vh;
+   /* width: 65%; */
+
+}
+
+.upper-left{
+   background-color: rgb(241, 236, 236);
+   position: relative;
+   
+}
+
+.lower-left{
+    background-color: rgb(45, 97, 141);
+    padding-top: 15%;
+    position: relative;
+    z-index: 1;
+}
+
+.right-bottom{
+    padding-left: 5%;
+}
+
+
+.logo{
+   display: flex;
+   justify-content: center;
+   height: 150px;
+   padding: 0 0 5% 0;
+}
+
+.profile{
+    height: 140px;
+/* margin: 1rem 0; */
+
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    position: absolute;
+    top: 70%;
+    left:29%;
+   
+
+    
+    /* align-items: center; */
+ 
+}
+
+.about{
+        padding: 0.3rem;
+        font-size: x-large;
+        font-weight: bolder;
+        color: whitesmoke;
+        padding-left: 10%;
+        padding-top: 10%;
+    
+}
+
+.aboutLine{
+    width: 30%;
+    position: absolute;
+    left: 10%;
+        
+}
+
+.aboutLine2{
+    width: 28%;
+    position: absolute;
+    left: 9%;
+    
+}
+
+.aboutLine3{
+    width: 25%;
+    position: absolute;
+    left: 10%;
+}
+
+.aboutLine4{
+    width: 38%;
+    position: absolute;
+    left: 9%;
+}
+
+
+.aboutInfo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 9%;
+    color: whitesmoke;
+    font-size: medium;
+    font-weight: 500;
+    padding-top: 1%;
+}
+
+.Contact{
+    padding: 0.3rem;
+    font-size: large;
+    font-weight: bolder;
+    color: whitesmoke;
+    padding-left: 9%;
+    padding-top: 10%;
+    position: relative;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    padding-left: 9%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+
+.tele{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    padding-left: 9%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    padding-left: 9%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+
+.linkedin{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    padding-left: 9%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+
+.interest{
+    padding: 0.3rem;
+    font-size: x-large;
+    font-weight: bolder;
+    color: whitesmoke;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+.language1{
+    display: flex;
+    gap: 10%;
+    padding-left: 9%;
+    padding-top: 3%;
+    color: whitesmoke;
+}
+
+.skills{
+    padding: 0.3rem;
+    font-size: large;
+    font-weight: bolder;
+    color: whitesmoke;
+    padding-left: 9%;
+    padding-top: 6%;
+    position: relative;
+}
+
+
+.chocobar{
+    height: 11px;
+    width: 55%;
+    background-color: rgb(47, 67, 74);
+}

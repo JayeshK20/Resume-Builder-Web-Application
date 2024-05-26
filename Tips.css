@@ -1,0 +1,88 @@
+/* Reset default styles and provide a basic layout */
+/* Add additional styles as needed */
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    flex: 1;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #3498db; /* Header background color */
+    color: #fff; /* Header text color */
+    border-radius: 5px; /* Rounded corners */
+    opacity: 0.9; /* Transparency */
+  }
+  
+  .header__title {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .content {
+    margin-top: 20px;
+  }
+  
+  .tips-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Background with transparency */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .tips-list {
+    list-style-type: none;
+  }
+  
+  .tips-list li {
+    margin-bottom: 10px;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ddd;
+    margin-top: auto;
+    opacity: 0.8; /* Transparency */
+  }
+  
+  .footer p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #3498db;
+  }
+  
